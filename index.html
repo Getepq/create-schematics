@@ -3,67 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Mod Schematics</title>
+    <title>Create Mod Schematics | by timye</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Шрифт похожий на Minecraft -->
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>🛠️ Create Mod: База Схем</h1>
-        <p>Лучшие фермы и механизмы для выживания</p>
-    </header>
-
-    <main class="container">
+    <div class="main-wrapper">
         
-        <!-- КАРТОЧКА ФЕРМЫ №1 (Копируйте этот блок для новых ферм) -->
-        <div class="card">
-            <div class="card-image">
-                <!-- Сюда вставьте имя вашей картинки из папки images -->
-                <img src="images/iron-farm.jpg" alt="Ферма железа" onerror="this.src='https://placehold.co/600x400/5e5e5e/white?text=No+Image'">
+        <!-- Шапка сайта -->
+        <header>
+            <div class="logo-area">
+                <h1>⚙️ CREATE SCHEMATICS</h1>
+                <p>Лучшие механизмы и фермы</p>
             </div>
-            <div class="card-content">
-                <h2>Ферма Железа (Iron Farm)</h2>
-                <ul class="stats">
-                    <li>⚡ <b>Версия Create:</b> 0.5.1</li>
-                    <li>minecraft <b>Версия игры:</b> 1.20.1</li>
-                    <li>📦 <b>Доход:</b> 1200 слитков/час</li>
-                    <li>⚙️ <b>Сложность:</b> Легкая</li>
-                </ul>
-                <p class="description">
-                    Компактная ферма железа на основе булыжника и прессов. Не требует лавы для топлива, работает на вечном двигателе.
-                </p>
-                <!-- Ссылка на скачивание файла из папки files -->
-                <a href="files/iron_farm.nbt" class="mc-button" download>Скачать .nbt</a>
+            
+            <!-- Блок про авторов мода -->
+            <div class="mod-credits">
+                <span>Original Mod by <b>Simibubi</b></span>
+                <div class="links">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/create" target="_blank" class="small-btn">CurseForge</a>
+                    <a href="https://modrinth.com/mod/create" target="_blank" class="small-btn">Modrinth</a>
+                </div>
             </div>
-        </div>
-        <!-- КОНЕЦ КАРТОЧКИ -->
+        </header>
 
-        <!-- КАРТОЧКА ФЕРМЫ №2 -->
-        <div class="card">
-            <div class="card-image">
-                <img src="images/gold-farm.jpg" alt="Ферма золота" onerror="this.src='https://placehold.co/600x400/5e5e5e/white?text=No+Image'">
+        <!-- Сетка с фермами -->
+        <main class="grid-container">
+
+            <!-- КАРТОЧКА 1: Ферма железа -->
+            <div class="mc-card">
+                <div class="card-header">
+                    <h3>Ферма Железа</h3>
+                    <span class="badge">Easy</span>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/iron-farm.jpg" alt="Iron Farm" onerror="this.src='https://placehold.co/600x400/3a3a3a/white?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="stats-box">
+                        <p>📦 <b>Доход:</b> 1200/час</p>
+                        <p>⚡ <b>Create:</b> v0.5.1</p>
+                    </div>
+                    <p class="desc">Компактный дизайн на булыжнике. Не требует топлива.</p>
+                    <a href="files/iron_farm.nbt" class="download-btn" download>СКАЧАТЬ .NBT</a>
+                </div>
             </div>
-            <div class="card-content">
-                <h2>Ферма Золота (Gold)</h2>
-                <ul class="stats">
-                    <li>⚡ <b>Версия Create:</b> 0.5.1</li>
-                    <li>📦 <b>Доход:</b> 5000 самородков/час</li>
-                    <li>⚙️ <b>Сложность:</b> Средняя</li>
-                </ul>
-                <p class="description">
-                    Использует механический бур и вентиляторы для промывки гравия из Нижнего мира.
-                </p>
-                <a href="#" class="mc-button">Скачать .nbt</a>
+
+            <!-- КАРТОЧКА 2: Ферма золота -->
+            <div class="mc-card">
+                <div class="card-header">
+                    <h3>Ферма Золота</h3>
+                    <span class="badge yellow">Medium</span>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/gold-farm.jpg" alt="Gold Farm" onerror="this.src='https://placehold.co/600x400/3a3a3a/white?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="stats-box">
+                        <p>📦 <b>Доход:</b> 5000/час</p>
+                        <p>⚡ <b>Create:</b> v0.5.1</p>
+                    </div>
+                    <p class="desc">Промывка гравия вентиляторами. Нужен доступ в Ад.</p>
+                    <a href="#" class="download-btn" download>СКАЧАТЬ .NBT</a>
+                </div>
             </div>
-        </div>
 
-    </main>
+            <!-- КАРТОЧКА 3: Поезд (Пример) -->
+            <div class="mc-card">
+                <div class="card-header">
+                    <h3>Карьер-Поезд</h3>
+                    <span class="badge red">Hard</span>
+                </div>
+                <div class="card-img-container">
+                    <img src="images/train.jpg" alt="Train" onerror="this.src='https://placehold.co/600x400/3a3a3a/white?text=No+Image'">
+                </div>
+                <div class="card-body">
+                    <div class="stats-box">
+                        <p>📦 <b>Добыча:</b> Авто</p>
+                        <p>⚡ <b>Create:</b> v0.5.1</p>
+                    </div>
+                    <p class="desc">Самоходный буровой поезд. Строит рельсы сам.</p>
+                    <a href="#" class="download-btn" download>СКАЧАТЬ .NBT</a>
+                </div>
+            </div>
 
-    <footer>
-        <p>© 2026 Create Schematics | Сделано фанатом</p>
-    </footer>
+        </main>
 
+        <!-- Футер с твоим именем -->
+        <footer>
+            <div class="footer-content">
+                <p>Website made by <span class="author-name">timye</span></p>
+                <p class="disclaimer">Not affiliated with Mojang or Create Devs</p>
+            </div>
+        </footer>
+
+    </div>
 </body>
 </html>
